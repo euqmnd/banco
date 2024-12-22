@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Seção 1</h2>
+    <input type="number" id="initialNumber1" placeholder="Salário" />
+    <input type="number" id="numberInput1" placeholder="Despesa" />
+    <input type="text" id="textInput1" placeholder="Digite com o que gastou" />
+    <button onclick="addNumber('1')">Salvar</button>
+    <button onclick="clearData('1')">Limpar Todos</button>
+    <button onclick="calculateSubtraction('1')">Calcular</button>
+    
+    <div class="number-list" id="numberList1">
+      <h3>Gastos:</h3>
+    </div>
+    <div class="results" id="results1">
+      <h3>Resultado:</h3>
+      <p id="subtractionResult1">Subtração: </p>
+    </div>
+  
+    <!-- Seção 2 -->
+    <h2>Seção 2</h2>
+    <input type="number" id="initialNumber2" placeholder="" />
+    <input type="number" id="numberInput2" placeholder="Gasto Cartão Crédito" />
+    <input type="text" id="textInput2" placeholder="Digite com o que gastou" />
+    <button onclick="addNumber('2')">Salvar</button>
+    <button onclick="clearData('2')">Limpar Todos</button>
+    <button onclick="calculateSubtraction('2')">Calcular</button>
+    
+    <div class="number-list" id="numberList2">
+      <h3>Gastos:</h3>
+    </div>
+    <div class="results" id="results2">
+      <h3>Resultado:</h3>
+      <p id="subtractionResult2">Subtração: </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
